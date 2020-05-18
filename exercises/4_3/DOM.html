@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="page-title">Título</h2>
+    <p id="paragraph" class="fonte">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p id="second-paragraph" class="fonte">Segundo parágrafo!</p>
+    <script> var paragraph = document.getElementById("paragraph");
+        paragraph.style.color = "red";
+        var title = document.getElementById("page-title");
+        title.textContent = ("Lord of the rings")
+        var sub = document.getElementById("subtitle");
+        sub.textContent = ("Best Movie");
+        var texte = document.getElementsByClassName("fonte")[1]
+        texte.style.color = "blue";
+        </script>
+</body>
+</html>

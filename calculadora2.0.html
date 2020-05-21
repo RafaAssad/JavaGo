@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Calculator</title>
+</head>
+<body>
+
+  <label>Square this number:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button>
+  <br><br>
+  
+  <label>Half this number:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
+  
+  <label>
+    Fraction:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Whole:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>
+  
+  <label>Calculate area of circle with radius:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button> 
+  <br><br>
+  <div id="solution"></div>
+  
+  <script>
+
+    let resposta = document.querySelector('#solution')
+
+    
+
+    function squareNumber(n){
+        let numeroQuadrado = n*n;
+        console.log("The result of squaring the number " + n + " is " + numeroQuadrado);
+        return ("The result of squaring the number " + n + " is " + numeroQuadrado);
+    }
+    
+    let botao = document.querySelector('#square-button');
+    botao.addEventListener('click', function(){
+        let num = document.querySelector('#square-input').value;
+        resposta.innerHTML = squareNumber(num);
+    });
+   
+    
+
+    function halfNumber(m){
+    console.log("Half of " + m + " is " + m/2)
+    return("Half of " + m + " is " + m/2)
+    }
+
+    let botao2 = document.querySelector('#half-button');
+    botao2.addEventListener('click', function(){
+      let num2 = document.querySelector('#half-input').value;
+      resposta.innerHTML = halfNumber(num2);
+    })
+
+    function percentOf(o, p){
+    var percent = (o/p) * 100;
+    console.log(o + " is " + percent + "%" + " of " + p);
+    return(o + " is " + percent + "%" + " of " + p);
+    }
+
+    let botao3 = document.querySelector('#percent-button');
+    botao3.addEventListener('click', function(){
+      let num3 =document.querySelector('#percent1-input').value;
+      let num4 = document.querySelector('#percent2-input').value;
+      resposta.innerHTML = percentOf(num3, num4);
+    })
+
+    function areaOfCircle(q){
+        var pi = 3.14;
+        console.log("The area for a circle with radius " + q + " is " + pi * (q*q))
+        return("The area for a circle with radius " + q + " is " + pi * (q*q))
+    }
+
+    let botao4 = document.querySelector('#area-button');
+    botao4.addEventListener('click', function(){
+      let num5 = document.querySelector('#area-input').value;
+      resposta.innerHTML = areaOfCircle(num5);
+    })
+
+      
+  </script>
+  
+</body>
+</html>

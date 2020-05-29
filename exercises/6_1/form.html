@@ -7,18 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Cadastro de Currículos</h1>
+    <form name="cadastro" action="minhapaginahtml" method="GET">
     <fieldset>
-        <input type="text" placeholder="Digite seu nome" maxlength="40" required="required">
-        <input type="email" placeholder="Digite seu e-mail" maxlength="50" required="required">
-        <input type="text" placeholder="Digite seu CPF" maxlength="11" required="required">
-        <input type="text" placeholder="Digite seu endereço" maxlength="200" required="required">
-        <input type="text" placeholder="Digite sua cidade" maxlength="28" required>
-        <label for="estado">Escolha o estado</label>
-        <select name="estado" id="state">
-            <option value="">dasdasd</option>
-            <option value="">asdadasdasd</option>
+        <legend>Dados Cadastrais</legend><br>
+        <label for="name">Nome Completo</label><br>
+        <input id="name" type="text" placeholder="Digite seu nome" maxlength="40" required="required">
+        <br><br>
+        <label for="e-mail">E-mail</label><br>
+        <input id="e-mail" type="email" placeholder="Digite seu e-mail" maxlength="50" required="required"><br><br>
+        <label for="cpf">CPF</label><br>
+        <input id="cpf" type="text" placeholder="Digite seu CPF" maxlength="11" required="required"><br><br>
+        <label for="endereco">Endereço</label><br>
+        <input id="endereco" type="text" placeholder="Digite seu endereço" maxlength="200" required="required"><br><br>
+        <label for="city">Cidade</label><br>
+        <input id="city" type="text" placeholder="Digite sua cidade" maxlength="28" required><br><br>
+        <label for="estado">Escolha o estado</label><br>
+        <select id="estado" name="estado" id="state">
+            <option>Select</option>
         </select>
-        <input type="button">
     </fieldset>
+</form>
+<script src="script.js"></script>
 </body>
 </html>

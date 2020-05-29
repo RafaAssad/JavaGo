@@ -23,9 +23,25 @@
         <label for="city">Cidade</label><br>
         <input id="city" type="text" placeholder="Digite sua cidade" maxlength="28" required><br><br>
         <label for="estado">Escolha o estado</label><br>
-        <select id="estado" name="estado" id="state">
+        <select id="estado" name="estado" id="state" required>
             <option>Select</option>
-        </select>
+        </select><br><br>
+        <p>Logradouro</p>
+        <label for="ap"><input name="log" id="ap" value="a" type="radio">Apartamento</label>
+        <label for="casa"><input name="log" id="casa" value="c" type="radio">Casa</label>
+    </fieldset><br><br>
+    <fieldset>
+        <legend>Último Emprego</legend>
+        <label for="resume">Resumo do Currículo</label><br>
+        <input id="resume" type="text" maxlength="1000" required><br><br>
+        <label for="cargo">Cargo</label><br>
+        <input id="cargo" type="text" maxlength="40" required><br><br>
+        <label for="descricao">Descrição do Cargo</label><br>
+        <input id="descricao" type="text" maxlength="500" required><br><br>
+        <label for="datei">Data Inicial</label><br>
+        <input id="datei" type="date" name="datei" required><br><br>
+        <label for="datef">Data Final</label><br>
+        <input id="datef" type="date" name="datef" required><br><br>
     </fieldset>
 </form>
 <script src="script.js"></script>
